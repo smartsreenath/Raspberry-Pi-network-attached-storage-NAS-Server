@@ -20,7 +20,7 @@ VNC stands for Virtual Network Computing. It is a cross-platform screen sharing 
 
 If you do not have external display this will help you remotely view the pi screen in pc or phone. 
 
-### If you have already running pi with new OS, skip first three steps.
+### ### If you have already running pi with new OS and SSh enabled, Then skip to 14th step.
 1. 	Preparing Your SD Card
     -  Format Sd card using [SD Card Formatter](https://www.sdcard.org/downloads/formatter/) (click for Link)
 2.	Flash the Raspberry Pi OS image to our SD card using Raspberry pi imager
