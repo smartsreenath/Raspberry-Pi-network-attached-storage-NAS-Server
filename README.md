@@ -23,17 +23,25 @@ If you do not have external display this will help you remotely view the pi scre
 ### If you have already running pi with new OS, skip first three steps.
 1. 	Preparing Your SD Card
 2.  Format Sd card using [SD Card Formatter](https://www.sdcard.org/downloads/formatter/) (click for Link)
-2.	Flash the Raspberry Pi OS image to our SD card using Raspberry pi imager
-3.	Click advance settings in Raspberry pi Imager and select ssh. You can also add new ssh password (default is raspberry)
+3.	Flash the Raspberry Pi OS image to our SD card using Raspberry pi imager
+4.	Click advance settings in Raspberry pi Imager and select ssh. You can also add new ssh password (default is raspberry)
     - If you do not have external display this will help you to install VNC and there by remotely control raspberry pi
 ![This is an image](https://i.imgur.com/PbAb9RH.jpg)
 ![This is an image](https://i.imgur.com/GrOovtm.jpg)
-4.	You can also enter the SSID and password of your Wi-Fi (Skip these steps if you are using Ethernet)
-5.	When it is complete, plug the SD card into your Pi
-6.	Boot Raspberry Pi
-7.	Download and Open [Wireless network watcher](https://www.nirsoft.net/utils/wireless_network_watcher.html) and find the ip address of pi (click for the download link)
-8.	Download Putty and Install Putty
+5.	You can also enter the SSID and password of your Wi-Fi (Skip these steps if you are using Ethernet)
+6.	When it is complete, plug the SD card into your Pi
+7.	Boot Raspberry Pi
+8.	Download and Open [Wireless network watcher](https://www.nirsoft.net/utils/wireless_network_watcher.html) and find the ip address of pi (click for the download link)
+9.	Download Putty and Install Putty
     - Open putty, select ssh, then enter the IP address and click open
     - IF asking any permission click accept and Enter
-9.	Enter username: pi
+10.	Enter username: pi
     - Password: ***** (enter the password given during flashing raspberry pi using raspberry pi imager) (default password is “ raspberry ”)
+
+11.	First you need update the OS. Type the below commands on putty
+```sh
+sudo apt update
+```
+```sh
+sudo apt full-upgrade
+```
