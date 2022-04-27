@@ -115,6 +115,8 @@ Tutorail link for VNC and SSH https://github.com/smartsreenath/Raspberry-Pi-VNC-
     - IF asking any permission click accept and Enter
 4.	Enter username: pi
     - Password: ***** (enter the password given during flashing raspberry pi using raspberry pi imager) (default password is “ raspberry ”)
+    
+ ### If you have VNC installed, You can use that instead of Putty.
 
 5.	First you need update the OS. Type the below commands on putty
 ```sh
