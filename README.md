@@ -16,6 +16,7 @@
 This Tutorial is a Part of RPI NAS Server. If you have external monitor skip the 1st part
 
 What is the use of VNC?
+
 VNC stands for Virtual Network Computing. It is a cross-platform screen sharing system that was created to remotely control another computer. This means that a computer's screen, keyboard, and mouse can be used from a distance by a remote user from a secondary device as though they were sitting right in front of it.
 
 If you do not have external display this will help you remotely view the pi screen in pc or phone. 
