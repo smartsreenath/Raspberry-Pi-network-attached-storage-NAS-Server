@@ -34,7 +34,7 @@ If you do not have external display this will help you remotely view the pi scre
 5.	When it is complete, plug the SD card into your Pi
 6.	Boot Raspberry Pi
 7.	Download and Open [Wireless network watcher](https://www.nirsoft.net/utils/wireless_network_watcher.html) and find the ip address of pi (click for the download link)
-8.	Download Putty and Install Putty
+8.	Download Putty and Install [Putty](https://www.putty.org/)
     - Open putty, select ssh, then enter the IP address and click open
     - IF asking any permission click accept and Enter
 9.	Enter username: pi
