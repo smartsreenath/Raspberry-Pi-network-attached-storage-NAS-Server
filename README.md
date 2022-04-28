@@ -80,7 +80,7 @@ sudo reboot now
 - Type SSH username and password.
 
 :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity:
-# :warning: :warning: :warning: Before proceeding to Second Part I Strongly recommend to make IP address of PI to Static :heavy_exclamation_mark: :heavy_exclamation_mark: :heavy_exclamation_mark:
+# :warning: :warning: :warning: Before proceeding to Second Part, I Strongly recommend to make the IP address of PI to Static :heavy_exclamation_mark: :heavy_exclamation_mark: :heavy_exclamation_mark:
 
 This is a brief tutorial. i strongly suggest to go through the given link. I made  a detail tutorial about static ip config in Raspberry pi
 https://github.com/smartsreenath/Raspberry-Pi-Static-IP-Address/blob/main/README.md
