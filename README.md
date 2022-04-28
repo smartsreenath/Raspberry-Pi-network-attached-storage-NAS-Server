@@ -79,6 +79,55 @@ sudo reboot now
 - Enter the IP Address of raspberry pi
 - Type SSH username and password.
 
+:infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity:
+# :warning: :warning: :warning: Before proceeding to Second Part I Strongly recommend to make IP address of PI to Static :heavy_exclamation_mark: :heavy_exclamation_mark: :heavy_exclamation_mark:
+
+This is a brief tutorial. i strongly suggest to go through the given link. I made  a detail tutorial about static ip config in Raspberry pi
+https://github.com/smartsreenath/Raspberry-Pi-Static-IP-Address/blob/main/README.md
+
+Before that, you will need some information on your current network setup
+
+- The type of network connection. This is either **wlan0** if your Raspberry Pi is connected to the router **Wirelessly**, or **eth0** if it’s connected using an **Ethernet cable**.
+
+- The Raspberry Pi’s currently assigned IP address. I am going to same ip addrees assigned by router. Since its free.
+
+- Default Gateway. That is your Router IP address.
+
+1. Type this command in terminal or putty
+```sh
+ifconfig
+```
+
+![This is image](https://i.imgur.com/9zqJrro.jpg)
+
+In here **eth0** stands for ethernet.If you are coonected to raspberry through wirelessly, it shows **wlan0**.
+
+192.168.1.156 is my IP address assigned by the router for PI (Dynamic).
+ 2. NextWe need  Default Gateway. For that type
+ ```sh
+ sudo route -n
+ ```
+
+![This is image](https://i.imgur.com/DhgiZXz.jpg)
+
+In here 192.168.1.1 is my default gateway.
+3. Next is DNS. Your router’s DNS (Domain Name System) IP address. This is typically the same as its gateway address, but may be set to another value to use an alternative DNS – such as 8.8.8.8 for Google, or 1.1.1.1 for Cloudflare. But here i am  using gateway address that is 192.168.1.1
+4. it’s time to edit the dhcpcd.conf configuration file to add the settings you need to set up a static IP address for your Raspberry Pi
+5. Type this command on terminal
+```sh
+sudo nano /etc/dhcpcd.conf
+```
+6. add the following lines at the bottom
+
+![This is image](https://i.imgur.com/P1RwDiO.jpg)
+
+**interface eth0**
+**static ip_address = 192.168.1.156**
+**static routers = 192.168.1.1**
+**static domain_name_servers = 192.168.1.1**
+
+ :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity:
+ 
 # Raspberry Pi network-attached storage (NAS) Server—2nd  Part
 ### Raspberry Pi SSD BOOT  
 
@@ -195,4 +244,5 @@ dd if=/dev/zero of=./speedTestFile bs=20M count=5 oflag=direct
 dd if=./speedTestFile of=/dev/zero bs=20M count=5 oflag=dsync
 ```
 
+:infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity:
 
