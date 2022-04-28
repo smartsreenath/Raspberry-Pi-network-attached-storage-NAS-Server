@@ -126,6 +126,8 @@ sudo nano /etc/dhcpcd.conf
 **static routers = 192.168.1.1**
 **static domain_name_servers = 192.168.1.1**
 
+:dog:
+
  :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity: :infinity:
  
 # Raspberry Pi network-attached storage (NAS) Server—2nd  Part
